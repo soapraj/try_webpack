@@ -4,7 +4,9 @@ var path = require('path');
  module.exports = {
      entry: {
       app: './js/app.js',
-      test: './js/test.js'
+      test: './js/test.js',
+      style: './css/style.css',
+      test: './css/test.css'
      },
      output: {
          path: path.resolve(__dirname, 'build'),
