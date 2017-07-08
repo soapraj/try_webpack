@@ -5,10 +5,10 @@ var path = require('path');
      entry: {
       index: './js/index.js',
       app: './js/app.js',
-      test: './js/test.js',
-      style: './css/style.css',
-      test: './css/test.css',
-      vendor: ['lodash', 'jquery']
+      stylecss: './css/style.css',
+      testcss: './css/test.css',
+      vendor: ['lodash', 'jquery'],
+      test: './js/test.js'
      },
      output: {
          path: path.resolve(__dirname, 'build'),
@@ -28,7 +28,7 @@ var path = require('path');
                loader: "style-loader!css-loader"
              },
              {
-               test: /\.(png|svg|jpg|gif)$/, 
+               test: /\.(png|svg|jpg|gif)$/,
                loader: "file-loader"
              }
          ]
